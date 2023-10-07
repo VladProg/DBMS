@@ -49,7 +49,7 @@ namespace DBMS.Models.Values
         public override string ToString() => $"(R={R}, G={G}, B={B})";
 
         public override bool Equals(object? obj) =>
-            base.Equals(obj) && obj is ColorInvl other &&
+            base.Equals(obj) && obj is Color other &&
             R == other.R && G == other.G && B == other.B;
     }
 }

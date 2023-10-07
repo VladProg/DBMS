@@ -17,7 +17,7 @@ namespace DBMS.Models
         {
             Id = id;
             Name = name;
-            this.columns = columns;
+            this.columns = (columns.Clone() as Column[])!;
         }
 
         public virtual Row AddRow(Values.Value[] cells)
